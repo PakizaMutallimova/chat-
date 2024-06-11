@@ -27,6 +27,7 @@ const Form = () => {
             <button className={action === 'Login'? "btn active":"btn"} onClick={()=>{setaction("Sign Up")}}>Sign Up</button>
             <button className={action === 'Sign Up'? "btn active":"btn"} onClick={()=>{setaction("Login")}}>Login</button>
             </div>
+            <a href="./pages/Chat">chat</a>
         </div>
     </div>
   )

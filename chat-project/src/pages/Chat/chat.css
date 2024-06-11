@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-ls{
+    width: 900px;
+    height: 100vh;
+    padding: 30px;
+    background-color: aquamarine;
+}
+
+.message{
+    display: flex;
+    background-color: yellow;
+    position: relative;
+}
+
+.user-ac{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+    border-radius: 50px;
+}
