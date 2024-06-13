@@ -2,22 +2,25 @@ import React, { useState } from 'react'
 
 const Form = () => {
   const [action, setaction] = useState('Login')
+  function sendMessage() {
+    
+  }
 
   return (
     <div>
-        <div className='form'>
+        <form className='form' onSubmit={sendMessage}>
             <h2>{action}</h2>
             {action === "Login" ? <div></div> : <div className='form-input'>
-                <label for="name" htmlFor="">Name</label>
+                <label htmlFor="name">Name</label>
                 <input id="name" type="text" />
             </div>}
             
             <div className='form-input'>
-                <label for="email" htmlFor="">Email</label>
+                <label htmlFor="email">Email</label>
                 <input id="email" type="email" />
             </div>
             <div className='form-input'>
-                <label for="password" htmlFor="">Password</label>
+                <label htmlFor="password">Password</label>
                 <input id="password" type="password" />
             </div>
             {action === "Sign Up" ? <div></div> : <div className="lost-password">
@@ -28,7 +31,7 @@ const Form = () => {
             <button className={action === 'Sign Up'? "btn active":"btn"} onClick={()=>{setaction("Login")}}>Login</button>
             </div>
             <a href="./pages/Chat">chat</a>
-        </div>
+        </form>
     </div>
   )
 }
