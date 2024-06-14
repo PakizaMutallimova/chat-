@@ -7,8 +7,8 @@ const Chat = () => {
         <div className="container-ls">
           <div className="message-box">
             <div className="message">
-              <p>test message</p>
-              <div className="user-ac"></div>
+              <div className="text-message">test</div>
+              <div className="user-profile"></div>
             </div>
           </div>
         </div>

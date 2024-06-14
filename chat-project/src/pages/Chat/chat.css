@@ -21,18 +21,33 @@ body{
     background-color: aquamarine;
 }
 
+/* .message-box{} */
+
 .message{
     display: flex;
+    align-items: center;
     background-color: yellow;
     position: relative;
+    margin-left: 10px;
 }
 
-.user-ac{
-    width: 30px;
-    height: 30px;
+.text-message{
+    padding: 2px;
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50px 0 0 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.user-profile{
+    width: 40px;
+    height: 40px;
     background-color: red;
     position: absolute;
-    left: -20px;
-    top: -10px;
+    left: -40px;
     border-radius: 50px;
 }
